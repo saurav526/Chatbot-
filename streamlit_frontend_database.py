@@ -3,6 +3,11 @@ from langgraph_database_backend import chatbot, retrieve_all_threads
 from langchain_core.messages import HumanMessage
 import uuid
 
+
+# here we can use langsmith to store the conversation history in a database and retrieve it when needed. We can use the thread_id to identify the conversation and store the messages in a structured format.
+
+# which is use to trace the workflow of the chatbot and its main features are is observability, debugging, and performance monitoring. It allows us to track the flow of data and the execution of the chatbot's components, making it easier to identify issues and optimize performance. Langsmith can be used to log events, monitor metrics, and visualize the chatbot's behavior in real-time.
+
 # **************************************** utility functions *************************
 
 def generate_thread_id():
